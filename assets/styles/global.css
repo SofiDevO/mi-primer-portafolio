@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#AF0404;
+    --secundary-color: #FF0000;
+    --background-color: #252525;
+    --gray-color: #414141;
+    /* textos */
+    --titles:  'Montserrat', sans-serif;
+    --text-content:'Montserrat', sans-serif;
+    --text-hiligths: 'Fira Code', monospace;
+    --title-size: 6rem;
+    --subtitles: 3rem;
+    --middle-size: 2rem;
+    --descriptions: 4rem;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
