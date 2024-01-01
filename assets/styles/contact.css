@@ -1,3 +1,5 @@
+@import url("../styles/animation.css");
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -6,9 +8,10 @@
   justify-content: center;
   font-family: var(--text-content);
   height: 70dvh;
+  background: var(--gradient-blue);
 }
 .contact__title {
-  font-size: var(--subtitles);
+  font-size: var(--title-size);
   margin-bottom: 25px;
 }
 .form {
@@ -18,8 +21,10 @@
   align-self: center;
   align-items: stretch;
   max-width: 430px;
-  background: var(--main-color);
-  padding: 0 2rem;
+  background: rgba(22, 0, 221, 0.19);
+  border: 1px solid rgba(0, 187, 255, 0.556);
+  backdrop-filter: blur(13px);
+  padding: 2rem;
   height: 54vh;
   justify-content: center;
   border-radius: 15px;
@@ -54,4 +59,7 @@
   background-color: rgb(239, 239, 239);
   border: 2px solid black;
   color: black;
+  -webkit-animation: jello-horizontal 1s both;
+  animation: jello-horizontal 1s both;
+  cursor: pointer;
 }

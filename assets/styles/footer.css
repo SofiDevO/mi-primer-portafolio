@@ -4,7 +4,7 @@
   padding: 10px 20px;
   height: 17dvh;
   align-items: center;
-  background: #101010;
+  background: var(--background);
 }
 .footer__links {
   display: flex;
@@ -17,6 +17,7 @@
 .footer__link {
   color: white;
   font-size: 1.5rem;
+  font-family: var(--text-content);
 }
 
 .footer__social {

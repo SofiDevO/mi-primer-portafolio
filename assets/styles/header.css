@@ -15,16 +15,7 @@ header {
 .logo {
   font-size: 2.8rem;
   font-family: var(--titles);
-  font-weight: 500;
-  background: linear-gradient(
-    83deg,
-    rgba(255, 0, 0, 1) 10%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 0, 0, 1) 81%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 .menu {
   width: 100%;
@@ -36,21 +27,24 @@ header {
   justify-content: space-around;
 }
 .menu__item {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .menu__item a {
-  color: var(--secundary-color);
+  color: white;
   font-family: var(--titles);
   font-weight: 500;
 }
 
 .menu__item a:hover {
-  color: white;
-  transition: 0.2s ease-in-out;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: scale 0.5s ease-in-out;
 }
 
 .menu__item:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {

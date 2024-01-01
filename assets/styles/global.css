@@ -1,38 +1,51 @@
-*{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-:root{
-    --main-color:#AF0404;
-    --secundary-color: #FF0000;
-    --background-color: #252525;
-    --gray-color: #414141;
-    /* textos */
-    --titles:  'Montserrat', sans-serif;
-    --text-content:'Montserrat', sans-serif;
-    --text-hiligths: 'Fira Code', monospace;
-    --title-size: 6rem;
-    --subtitles: 3rem;
-    --middle-size: 2rem;
-    --descriptions: 4rem;
+:root {
+  --background: black;
+  --shadow-blue: drop-shadow(1px 0px 10px rgb(0, 255, 213));
+  --background-color: #252525;
+  --gray-color: #414141;
+  --gradient-blue: linear-gradient(145deg, rgb(0, 0, 0) 10%, rgb(0, 5, 36) 90%);
+  --gradient-text: linear-gradient(
+    45deg,
+    rgb(21, 215, 3) 20%,
+    rgb(2, 209, 255) 80%
+  );
+  /* textos */
+  --text-ligth: rgb(0, 255, 213);
+  --titles: "Montserrat", sans-serif;
+  --text-content: "Montserrat", sans-serif;
+  --text-hiligths: "Fira Code", monospace;
+  --title-size: 6rem;
+  --subtitles: 3rem;
+  --middle-size: 2rem;
+  --descriptions: 4rem;
 }
 
-
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    color: white;
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+  color: white;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
+}
+
+.text__gradient {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

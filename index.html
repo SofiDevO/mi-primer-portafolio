@@ -1,207 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio Sofidev frontend developr" />
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/global.css" />
-    <link rel="stylesheet" href="./assets/styles/header.css" />
-    <link rel="stylesheet" href="./assets/styles/hero.css" />
-    <link rel="stylesheet" href="./assets/styles/skills.css" />
-    <link rel="stylesheet" href="./assets/styles/about.css" />
-    <link rel="stylesheet" href="./assets/styles/contact.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
-    <title>Portafolio Sofidev</title>
-  </head>
-  <body>
-    <header>
-      <a class="logo" href="./index.html"
-        ><span class="logo__span">SofiDev</span></a
-      >
 
-      <nav class="menu nav">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#skills">Skills</a></li>
-          <li class="menu__item"><a href="#about">About me</a></li>
-          <li class="menu__item"><a href="#contact">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio Sofidev frontend developr" />
+  <link rel="shortcut icon" href="./assets/img/blue.webp" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="./assets/styles/reset.css" />
+  <link rel="stylesheet" href="./assets/styles/global.css" />
+  <link rel="stylesheet" href="./assets/styles/header.css" />
+  <link rel="stylesheet" href="./assets/styles/hero.css" />
+  <link rel="stylesheet" href="./assets/styles/skills.css" />
+  <link rel="stylesheet" href="./assets/styles/about.css" />
+  <link rel="stylesheet" href="./assets/styles/contact.css" />
+  <link rel="stylesheet" href="./assets/styles/footer.css" />
+  <link rel="stylesheet" href="./assets/styles/animation.css" />
+  <title>Portafolio Sofidev</title>
+</head>
+
+<body>
+  <header>
+    <a class="logo text__gradient" href="./index.html"><span class="logo__span">SofiDev</span></a>
+
+    <nav class="menu nav">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#skills">Skills</a></li>
+        <li class="menu__item"><a href="#about">About me</a></li>
+        <li class="menu__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__text">
+          <h1 class="hero__titulo">Hi I'm Sofi<span class="text__gradient">Dev</span></h1>
+          <h3 class="hero__description">frontend Developer</h3>
+          <div class="hero__social">
+            <a href="https://github.com/SofiDevO" target="_blank" rel="nofollow noopener noreferrer ">
+              <iconify-icon class="hero__icon hero__icon--github" icon="brandico:github"></iconify-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/sofidev/" target="_blank" rel="nofollow noopener noreferrer">
+              <iconify-icon class="hero__icon hero__icon--linkedin" icon="devicon-plain:linkedin"></iconify-icon>
+            </a>
+            <a href="mailto:contact@itssofi.dev">
+              <iconify-icon class="hero__icon hero__icon--mail" icon="ion:mail"></iconify-icon>
+            </a>
+          </div>
+        </div>
+        <div class=" hero__pic profile__pic"></div>
+        <!-- <img class="hero__pic" src="./assets/img/profile.jpg" alt="Sofidev profile photo" /> -->
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="skills__title text__gradient">Skills</h2>
+
+      <div class="skills__container">
+        <div class="card">
+          <iconify-icon class="card__icons" icon="vscode-icons:file-type-html"></iconify-icon>
+          <h2 class="card__title">html</h2>
+        </div>
+        <div class="card">
+          <iconify-icon class="card__icons" icon="vscode-icons:file-type-css"></iconify-icon>
+          <h2 class="card__title">CSS</h2>
+        </div>
+        <div class="card">
+          <iconify-icon class="card__icons card__icons--javascript" icon="devicon:javascript"></iconify-icon>
+          <h2 class="card__title">Javascript</h2>
+        </div>
+        <div class="card">
+          <iconify-icon class="card__icons" icon="skill-icons:react-dark"></iconify-icon>
+          <h2 class="card__title">React</h2>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__text">
+          <h2 class="about__title">
+            I <span class="text__gradient">Love</span> What I
+            <span class=" text__gradient">do ❤️</span>
+          </h2>
+        </div>
+        <p class="about__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+          vero omnis tempora eius consequuntur quas, aliquam autem? Officiis
+          alias fuga aperiam repellendus obcaecati rerum ab quae iste
+          voluptas, laborum cumque
+        </p>
+      </div>
+      <img class="about__img" src="./assets/img/coca.webp" alt="Sofi IA generated image" />
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Contact</h2>
+      <form class="form" action="#">
+        <label for="name" class="form__label">Name</label>
+        <input type="text" name="" id="name" class="form__input" placeholder="Your name" />
+        <label for="email" class="form__label">Email</label>
+        <input type="email" name="" id="email" class="form__input" placeholder="Your email" />
+        <label class="form__label" for="message">Message</label>
+        <textarea class="form__textarea" name="message" id="message" cols="25" rows="10"
+          placeholder="Your message"></textarea>
+        <input class="form__btn" type="submit" value="Send" />
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="logo text__gradient" href="./index.html"><span class="logo__span">SofiDev</span></a>
+    <div class="footer__links">
+      <nav class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__element">
+            <a class="footer__link" href="#">Mis proyectos</a>
+          </li>
+          <li class="footer__element">
+            <a class="footer__link" href="#">Portafolio</a>
+          </li>
+          <li class="footer__element">
+            <a class="footer__link" href="#">Contacto</a>
+          </li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero__container">
-          <di class="hero__text">
-            <h1 class="hero__titulo">Hi I'm SofiDev</h1>
-            <h3 class="hero__description">frontend Developer</h3>
-            <div class="hero__social">
-              <a
-                href="https://github.com/SofiDevO"
-                target="_blank"
-                rel="nofollow noopener noreferrer "
-              >
-                <iconify-icon
-                  class="hero__icon hero__icon--github"
-                  icon="brandico:github"
-                ></iconify-icon>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sofidev/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                <iconify-icon
-                  class="hero__icon hero__icon--linkedin"
-                  icon="devicon-plain:linkedin"
-                ></iconify-icon>
-              </a>
-              <a href="mailto:contact@itssofi.dev">
-                <iconify-icon
-                  class="hero__icon hero__icon--mail"
-                  icon="ion:mail"
-                ></iconify-icon>
-              </a>
-            </div>
-          </di>
-          <img
-            class="hero__pic"
-            src="./assets/img/profile.jpg"
-            alt="Sofidev profile photo"
-          />
-        </div>
-      </section>
-      <section class="skills" id="skills">
-        <h2 class="skills__title">Skills</h2>
-        <img class="skills__img--bg" src="./assets/svg/Gradient.svg" alt="" />
-        <div class="skills__container">
-          <div class="card">
-            <iconify-icon
-              class="card__icons"
-              icon="vscode-icons:file-type-html"
-            ></iconify-icon>
-            <h2 class="card__title">html</h2>
-          </div>
-          <div class="card">
-            <iconify-icon
-              class="card__icons"
-              icon="vscode-icons:file-type-css"
-            ></iconify-icon>
-            <h2 class="card__title">CSS</h2>
-          </div>
-          <div class="card">
-            <iconify-icon
-              class="card__icons card__icons--javascript"
-              icon="devicon:javascript"
-            ></iconify-icon>
-            <h2 class="card__title">Javascript</h2>
-          </div>
-          <div class="card">
-            <iconify-icon
-              class="card__icons"
-              icon="skill-icons:react-dark"
-            ></iconify-icon>
-            <h2 class="card__title">React</h2>
-          </div>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <div class="about__container">
-          <div class="about__text">
-            <h2 class="about__title">
-              I <span class="span--red">Love</span> What I
-              <span class="span--red">do ❤️</span>
-            </h2>
-          </div>
-          <p class="about__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
-            vero omnis tempora eius consequuntur quas, aliquam autem? Officiis
-            alias fuga aperiam repellendus obcaecati rerum ab quae iste
-            voluptas, laborum cumque
-          </p>
-        </div>
-        <img
-          class="about__img"
-          src="./assets/img/libro.jpg"
-          alt="Sofi IA generated image"
-        />
-      </section>
-      <section class="contact" id="contact">
-        <h2 class="contact__title">Contact</h2>
-        <form class="form" action="#">
-          <label for="name" class="form__label">Name</label>
-          <input
-            type="text"
-            name=""
-            id="name"
-            class="form__input"
-            placeholder="Your name"
-          />
-          <label for="email" class="form__label">Email</label>
-          <input
-            type="email"
-            name=""
-            id="email"
-            class="form__input"
-            placeholder="Your email"
-          />
-          <label class="form__label" for="message">Message</label>
-          <textarea
-            class="form__textarea"
-            name="message"
-            id="message"
-            cols="25"
-            rows="10"
-            placeholder="Your message"
-          ></textarea>
-          <input class="form__btn" type="submit" value="Send" />
-        </form>
-      </section>
-    </main>
-    <footer class="footer">
-      <a class="logo" href="./index.html"
-        ><span class="logo__span">SofiDev</span></a
-      >
-      <div class="footer__links">
-        <nav class="footer__menu">
-          <ul class="footer__list">
-            <li class="footer__element">
-              <a class="footer__link" href="#">Mis proyectos</a>
-            </li>
-            <li class="footer__element">
-              <a class="footer__link" href="#">Portafolio</a>
-            </li>
-            <li class="footer__element">
-              <a class="footer__link" href="#">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__social">
-        <iconify-icon
-          class="footer__icon"
-          icon="grommet-icons:instagram"
-        ></iconify-icon>
-        <iconify-icon
-          class="footer__icon"
-          icon="fa-brands:medium"
-        ></iconify-icon>
-        <iconify-icon
-          class="footer__icon"
-          icon="simple-icons:twitter"
-        ></iconify-icon>
-      </div>
-    </footer>
-  </body>
+    </div>
+    <div class="footer__social">
+      <iconify-icon class="footer__icon" icon="grommet-icons:instagram"></iconify-icon>
+      <iconify-icon class="footer__icon" icon="fa-brands:medium"></iconify-icon>
+      <iconify-icon class="footer__icon" icon="simple-icons:twitter"></iconify-icon>
+    </div>
+  </footer>
+</body>
+
 </html>
