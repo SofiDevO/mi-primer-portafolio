@@ -1,10 +1,14 @@
+@import "../styles/animation.css";
+
 .hero {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
+  background-position: left;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .hero__container {
@@ -21,12 +25,24 @@
   max-width: 450px;
   max-height: 450px;
   border-radius: 50%;
-  border: 5px solid var(--main-color);
+  border: 5px solid rgb(0, 255, 213);
+  filter: var(--shadow-blue);
+  animation: floatingIcon 3s ease infinite 0.4s;
+}
+.profile__pic {
+  transition: 1s ease-in-out;
+  background-image: url("../img/sofidevProfile.webp");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.profile__pic:hover {
+  background-image: url("../img/sofidevBlue.webp");
 }
 
 .hero__text {
-  font-family: var(----text-hiligths);
-  color: var(--secundary-color);
+  font-family: var(--text-hiligths);
+  color: var(--text-ligth);
 }
 .hero__titulo {
   font-family: var(--titles);
@@ -35,11 +51,13 @@
   font-weight: 600;
   color: white;
 }
+
 .hero__description {
-  font-size: var(--subtitles);
+  font-size: 2.4rem;
   text-align: center;
   font-family: var(--text-hiligths);
   margin-bottom: 8px;
+  animation: text-blur 1.4s cubic-bezier(0.55, 0.083, 0.68, 0.53) 0.1s both;
 }
 .hero__social {
   display: flex;
