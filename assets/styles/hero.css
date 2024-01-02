@@ -35,8 +35,6 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  max-width: 28rem;
-  max-height: 28rem;
 }
 .profile__pic:hover {
   background-image: url("../img/sofidevBlue.webp");
@@ -91,6 +89,9 @@
   }
   .hero__pic {
     min-width: 275px;
+    max-height: 280px;
+    max-width: 280px;
+    margin-top: 3rem;
   }
   .hero__titulo {
     text-align: center;
