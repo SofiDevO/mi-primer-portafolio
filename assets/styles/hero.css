@@ -21,21 +21,18 @@
 }
 
 .hero__pic {
-  width: 70%;
-  max-width: 450px;
-  max-height: 450px;
+  height: 319px;
+  width: 378px;
+  max-width: 322px;
+  max-height: 603px;
   border-radius: 50%;
   border: 5px solid rgb(0, 255, 213);
   filter: var(--shadow-blue);
   animation: floatingIcon 3s ease infinite 0.4s;
-}
-.profile__pic {
-  transition: 1s ease-in-out;
   background-image: url("../img/sofidevProfile.webp");
   background-size: cover;
-  height: 100%;
-  width: 100%;
 }
+
 .profile__pic:hover {
   background-image: url("../img/sofidevBlue.webp");
 }
